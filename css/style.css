@@ -11,7 +11,7 @@
 * These styles reset the default style sheet that comes with the user agent.
 */
 html {
-  overflow-y: scroll;
+  overflow-y: hidden;
   min-height: 100
 }
 
@@ -33,11 +33,15 @@ a img {
 
 .cf:before, .cf:after {
 	content:" ";
-	display:table
+	display:table;
+	line-height: 58px;
+	color: #fff;
 }
 
 .cf:after {
-	clear:both
+	clear:both;
+	line-height:58px;
+	color: #fff;
 }
 
 /**
@@ -79,12 +83,11 @@ main, article, aside, details, figcaption, figure, footer, header, hgroup, menu,
 * Custom Styles
 */
 body {
-	background: #EDEDED url(../img/noise.png) repeat;
-  font-size: 62.5%
+
 }
 
 h1 {
-	color: #6F6F6F;
+	color: #FFF;
 	font: 3em 'SortsMillGoudyItalic';
 	margin:10px 0 30px;
 	text-align: center
@@ -109,15 +112,17 @@ h1 {
 	float: left;
 	position: relative;
 	margin-bottom: 25px;
-	width: 320px
+	width: 800px;
+	background-color: rgba(0,0,0,0.00);
 }
 
 .lastfm .highlight {
-	height: 125px;
-  left: -13px;
+  height: 125px;
+  left: -10px;
   position: absolute;
   top: -1px;
   width: 153px;
+  color: #fff;
 }
 
 .lastfm .cover {
@@ -133,30 +138,33 @@ h1 {
 }
 
 .lastfm .info {
-	color: #6F6F6F;
+	color: #FFF;
 	float: left;
 	font-family: 'DroidSansRegular';
-	margin-left: 25px;
-	width: 165px;
+	margin-left: 30px;
+	margin-top: 10px;
+	width: 580px;
 }
 
 .lastfm .info p {
-	font-size: 1.1em;
-	line-height: 16px;
-	margin-bottom: 4px;
-	padding-left: 20px
+	font-size: 20px;
+	line-height: 28px;
+	margin-bottom: 3px;
+	padding-left: 13px;
+	text-shadow: 3px 3px black;
 }
 
 .lastfm .song {
-	background: url(../img/icon-song.png) no-repeat left 4px;
+	background: url(../img/icon-song.png) no-repeat left 3px;
+	
 }
 
 .lastfm .artist {
-	background: url(../img/icon-artist.png) no-repeat left 4px;
+	background: url(../img/icon-artist.png) no-repeat left 3px;
 }
 
 .lastfm .album {
-	background: url(../img/icon-album.png) no-repeat left 4px;
+	background: url(../img/icon-album.png) no-repeat left 3px;
 }
 
 @media only screen and (max-device-width: 480px) {
